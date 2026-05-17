@@ -96,3 +96,22 @@ footer {
   color: #7f8c8d;
   border-top: 1px solid #ddd;
 }
+/* Mengatur wadah foto agar berbaris */
+.foto-container {
+    display: flex;
+    flex-wrap: wrap; /* Supaya kalau penuh otomatis pindah ke baris bawah */
+    gap: 15px;      /* Jarak antar foto */
+    justify-content: center; /* Foto rata tengah */
+}
+
+.foto-container img {
+    width: 200px;    /* Ukuran lebar foto seragam */
+    height: auto;
+    border-radius: 8px; /* Biar ujungnya melengkung sedikit */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Kasih bayangan tipis */
+    transition: transform 0.3s; /* Efek halus saat di-hover */
+}
+
+.foto-container img:hover {
+    transform: scale(1.05); /* Foto membesar sedikit saat kursor nempel */
+}
